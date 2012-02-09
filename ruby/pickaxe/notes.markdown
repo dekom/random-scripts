@@ -15,12 +15,9 @@ Allowed characters:
 	> - letters \(exception @\)
 	> - digits
 	> - underscores
-- Instance variables:
-	> - underscores\_between\_words
-- Class names:
-	> - CamelCase
-- Method names:
-	> - may end with ?, !, =
+- Instance variables: underscores\_between\_words
+- Class names: CamelCase
+- Method names: may end with ?, !, =
 
 # Objects
 Ruby is entirely object-oriented. Objects *instances* are created using the constructor `<Object>.new`.
