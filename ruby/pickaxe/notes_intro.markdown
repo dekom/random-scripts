@@ -41,17 +41,15 @@ For double-quote strings, Ruby will:
 2. Look for expression interpolation. `#{expression}`
 
 ## Arrays and Hashes ##
-Both are indexed, non-homogeneous collections, using *key* to store *value*.  In *arrays*, the key is an integer, and in *hash*, the key is an object.
+Both are indexed, non-homogeneous collections, using *key* to store *value*.
 
-<table>
-	<tr>
-		<td>Arrays</td>
-		<td>Hashes</td>
-	</tr>
-</table>
+### Arrays ###
+Arrays are more efficient.
 
-Arrays are more efficient, but hashes provide more flexibility.
+- Constructor: `[ ]`
+- Keys are integers
+- Referenced using `array[0]`
+- `%w{ an array of words } => ["an", "array", "of", "words"]`
 
-Arrays are created with square brackets `[]` and is referenced by `array[0]`.
+### Hashes ###
 
-**Shortcut to create an array of words** `%w{ an array of words } => ["an", "array", "of", "words"]`
