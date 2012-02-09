@@ -44,3 +44,7 @@ For double-quote strings, Ruby will:
 Both are indexed, non-homogeneous collections, using *key* to store *value*.  In *arrays*, the key is an integer, and in *hash*, the key is an object.
 
 Arrays are more efficient, but hashes provide more flexibility.
+
+Arrays are created with square brackets `[]` and is referenced by `array[0]`.
+
+**Shortcut to create an array of words** `%w{ an array of words } => ["an", "array", "of", "words"]`
