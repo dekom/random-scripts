@@ -15,6 +15,7 @@ Allowed characters:
 	> - letters \(exception @\)
 	> - digits
 	> - underscores
+
 - Instance variables: underscores\_between\_words
 - Class names: CamelCase
 - Method names: may end with ?, !, =
