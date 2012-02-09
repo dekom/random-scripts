@@ -11,15 +11,16 @@ The first characters of a name indicate how the name is used.
 Allowed characters:
 
 - All:
--- letters \(exception @\)
--- digits
--- underscores
+
+	> - letters \(exception @\)
+	> - digits
+	> - underscores
 - Instance variables:
--- underscores\_between\_words
+	> - underscores\_between\_words
 - Class names:
--- CamelCase
+	> - CamelCase
 - Method names:
--- may end with ?, !, =
+	> - may end with ?, !, =
 
 # Objects
 Ruby is entirely object-oriented. Objects *instances* are created using the constructor `<Object>.new`.
