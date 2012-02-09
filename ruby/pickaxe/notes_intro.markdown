@@ -69,13 +69,12 @@ A symbol begins with a colon `:` and followed by a name. `:north`
 *Most notably used as keys in hashes*
 
 **Special syntax for creating a hash with symbols as keys**
-
-` 
-inst_section = {  
-	cello:		'string',  
-	clarinet:	'woodwind',  
-	drum:			'percussion',  
-}`
+ 
+	inst_section = {  
+		cello:		'string',  
+		clarinet:	'woodwind',  
+		drum:			'percussion',  
+	}
 
 `	inst_section[:cello] #=> string `
 
