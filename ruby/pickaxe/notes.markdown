@@ -34,5 +34,6 @@ In the single-quote construction, Ruby processes very little of the the content,
 While the double-quote construction involves more Ruby processing.
 
 For double-quote strings, Ruby will:
+
 1. Look for substitutions `\n, \t` and replace with binary value
 2. Look for expression interpolation. `#{expression}`
