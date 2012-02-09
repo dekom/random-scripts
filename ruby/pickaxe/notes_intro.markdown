@@ -113,4 +113,20 @@ and do/end for multiline blocks.
 Once such block has been passed to the method, it is called within the
 method using `yield`:
 
+	def call_block
+		puts "Start of method"
+		yield
+		yield
+		puts "End of method"
+	end
+
+	call_block { puts "In the block" }
+
+produces:
+
+	Start of method
+	In the block
+	In the block
+	End of method
+
 
