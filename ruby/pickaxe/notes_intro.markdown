@@ -80,4 +80,8 @@ inst_section = {
 `	inst_section[:cello] #=> string `
 
 ## Control Structures ##
+Ruby has all the standard control flow structures.
 
+`if () ... elsif () ... else ... end`
+
+`while () ... end`
