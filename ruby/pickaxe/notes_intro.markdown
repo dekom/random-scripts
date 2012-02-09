@@ -46,10 +46,38 @@ Both are indexed, non-homogeneous collections, using *key* to store *value*.
 ### Arrays ###
 Arrays are more efficient.
 
-- Constructor: `[ ]`
+- Constructor: `a[0] = "an"`
 - Keys are integers
 - Referenced using `array[0]`
 - `%w{ an array of words } => ["an", "array", "of", "words"]`
 
 ### Hashes ###
+Hashes are more flexible
+
+- Constructor: `{ key => value }`
+- `Hash.new(0)` => sets the return value of a non-existent key to 0
+- Keys are any object
+- Keys *must* be unique
+- Referenced using `hash[key]`
+
+## Symbols ##
+They are constant names that do not need to be predeclared and that are guaranteed to be unique,
+regardless of location of appearance.
+
+A symbol begins with a colon `:` and followed by a name. `:north`
+
+*Most notably used as keys in hashes*
+
+**Special syntax for creating a hash with symbols as keys**
+
+` inst_section = {
+			cello:		'string',
+			clarinet:	'woodwind',
+			drum:			'percussion',
+	}
+
+	inst_section[:cello] #=> string
+`
+
+## Control Structures ##
 
