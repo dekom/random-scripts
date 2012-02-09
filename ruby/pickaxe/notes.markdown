@@ -9,6 +9,7 @@ The first characters of a name indicate how the name is used.
 - Append with double at sign \(@@\): class variables
 
 Allowed characters:
+
 - All:
 -- letters \(exception @\)
 -- digits
