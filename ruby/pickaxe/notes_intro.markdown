@@ -96,6 +96,8 @@ Pattern matching in strings.  Remember, regular expressions are objects as well.
 - *Matching a pattern*: `=~`, which returns the patten's starting position if found,
 nil otherwise.
 
+[Visit Rubular](http://rublar.com) for awesome regex practices.
+
 ## Blocks and Iterators ##
 *Code blocks*: chunks of code you can associate with method invocations, almost
 as if they were parameters.
@@ -140,4 +142,12 @@ Parameters can be passed to the block between the vertical bars
 
 	call_block { |s| puts s }
 
+## Input/Output (I/O) ##
 
+*Inputs:* `get`
+
+*Outputs:* `puts, printf, print`
+
+## Command-Line Arguments ##
+
+Either `ARGV` or `ARGF`.
