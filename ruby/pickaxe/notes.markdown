@@ -24,18 +24,23 @@ Allowed characters:
 * * *
 Ruby is entirely object-oriented. Objects *instances* are created using the constructor `<Object>.new`.
 
-## Characteristics of object instances
+### Characteristics of object instances ###
 - object identifier (object ID)
 - instance variables
 - instance methods
 
-### Strings ###
+## Strings ##
 *String literals* are created either from single-quote `'` or double-quotes `"`.
 
-In the single-quote construction, Ruby processes very little of the the content, creating a true *literal* string.
+In the single-quote construction, Ruby processes very little of the content, creating a true *literal* string.
 While the double-quote construction involves more Ruby processing.
 
 For double-quote strings, Ruby will:
 
 1. Look for substitutions `\n, \t` and replace with binary value
 2. Look for expression interpolation. `#{expression}`
+
+## Arrays and Hashes ##
+Both are indexed, non-homogeneous collections, using *key* to store *value*.  In *arrays*, the key is an integer, and in *hash*, the key is an object.
+
+Arrays are more efficient, but hashes provide more flexibility.
