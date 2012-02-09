@@ -85,3 +85,7 @@ Ruby has all the standard control flow structures.
 `if () ... elsif () ... else ... end`
 
 `while () ... end`
+
+*statement modifiers*: useful shortcut for a single expression flow structure.
+
+`puts 'Hello, world!' if noob.level < 1`
