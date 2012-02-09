@@ -71,10 +71,10 @@ A symbol begins with a colon `:` and followed by a name. `:north`
 **Special syntax for creating a hash with symbols as keys**
 
 ` 
-inst_section = {
-	cello:		'string',
-	clarinet:	'woodwind',
-	drum:			'percussion',
+inst_section = {  
+	cello:		'string',  
+	clarinet:	'woodwind',  
+	drum:			'percussion',  
 }`
 
 `	inst_section[:cello] #=> string `
@@ -89,3 +89,29 @@ Ruby has all the standard control flow structures.
 *statement modifiers*: useful shortcut for a single expression flow structure.
 
 `puts 'Hello, world!' if noob.level < 1`
+
+## Regular Expressions ##
+Pattern matching in strings.  Remember, regular expressions are objects as well.
+
+- *Creating a pattern*: `/pattern/`
+- *Matching a pattern*: `=~`, which returns the patten's starting position if found,
+nil otherwise.
+
+## Blocks and Iterators ##
+*Code blocks*: chunks of code you can associate with method invocations, almost
+as if they were parameters.
+
+Though powerful, they're simply chunks of code between `{ ... code.to_do ... }`
+or `do ... code.to_do ... end`.
+
+`{}` (brace) syntax has higher precedence than `do ... end` blocks.
+Regardless, the emerging convention has brace syntax for single-line blocks
+and do/end for multiline blocks.
+
+### Usage ###
+`method(parameters[]) { code.to_do }`
+
+Once such block has been passed to the method, it is called within the
+method using `yield`:
+
+
