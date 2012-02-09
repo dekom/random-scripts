@@ -21,6 +21,7 @@ Allowed characters:
 - Method names: may end with ?, !, =
 
 # Objects
+* * *
 Ruby is entirely object-oriented. Objects *instances* are created using the constructor `<Object>.new`.
 
 ## Characteristics of object instances
