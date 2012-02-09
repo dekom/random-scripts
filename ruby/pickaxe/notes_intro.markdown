@@ -43,6 +43,13 @@ For double-quote strings, Ruby will:
 ## Arrays and Hashes ##
 Both are indexed, non-homogeneous collections, using *key* to store *value*.  In *arrays*, the key is an integer, and in *hash*, the key is an object.
 
+<table>
+	<tr>
+		<td>Arrays</td>
+		<td>Hashes</td>
+	</tr>
+</table>
+
 Arrays are more efficient, but hashes provide more flexibility.
 
 Arrays are created with square brackets `[]` and is referenced by `array[0]`.
