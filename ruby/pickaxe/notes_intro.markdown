@@ -129,4 +129,15 @@ produces:
 	In the block
 	End of method
 
+Parameters can be passed to the block between the vertical bars
+`| params ... |`
+
+	def call_block
+		puts "Start of method"
+		yield("In the block)
+		puts "End of method"
+	end
+
+	call_block { |s| puts s }
+
 
