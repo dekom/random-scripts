@@ -76,7 +76,7 @@ A symbol begins with a colon `:` and followed by a name. `:north`
 		drum:			'percussion',  
 	}
 
-`	inst_section[:cello] #=> string `
+	inst_section[:cello] #=> string
 
 ## Control Structures ##
 Ruby has all the standard control flow structures.
