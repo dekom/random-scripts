@@ -100,4 +100,26 @@ Colors are pretty rudimentary and needs no explanation.
 Gradient tools are self-explanatory, except that you can add additional
 gradient stops right below the gradient ramp.
 
+### Objects, Layers, & Groups ###
+Things to know that will make working with complicated designs simpler.
 
+Accessed by *Window > Layers*.  Layer orderings determines how objects
+overlap each other.
+
+To make arrangements easier, combine objects into logical groups.
+
+### Transparency & Graphic Styles ###
+
+There are 3 blending modes for objects:
+
+![Alt 3 Blending
+Modes](https://github.com/dekom/scripts/raw/master/adobe_illustrator/images/layer-effects.gif
+"Blending modes - Source: Vector Diary")
+
+Find out each blending mode in detail at [Adobe
+livedocs](http://livedocs.adobe.com/en_US/Illustrator/13.0/help.html?content=WS714a382cdf7d304e7e07d0100196cbc5f-64e0.html)
+
+
+**Unfortunately, the remaining illustrator training on Vector Diary's
+website require membership.  Look for other notes pages for additional
+information.**
