@@ -14,7 +14,8 @@ fit for digital display.
 *Cyan, Magenta, and Yellow* are subtractive colors (add up to black)
 that are fit for ink print.
 
-![Alt RGB Triangle](/images/RGB_triangle.gif "RGB colors are additive")
-![Alt CMYK Triangle](/images/CMY_triangle.gif "CMYK colors are
-subtractive")
+![Alt RGB Triangle](https://github.com/dekom/scripts/blob/master/adobe_illustrator/images/RGB_triangle.gif
+"RGB colors are additive")
+![Alt CMYK Triangle](https://github.com/dekom/scripts/blob/master/adobe_illustrator/images/CMY_triangle.gif
+"CMYK colors are subtractive")
 
