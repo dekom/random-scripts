@@ -88,3 +88,16 @@ Editing path can be accessed at *Window > Pathfinder*.
 
 ![Alt Pathfinder Cheat Sheet](https://github.com/dekom/scripts/raw/master/adobe_illustrator/images/compound-cheat-sheet.gif "Compound pathfinder cheat sheet - Source: Vector Diary")
 
+### Colors & Strokes ###
+Colors are pretty rudimentary and needs no explanation.
+
+*Strokes* are the shape outlines. Characteristics of strokes:
+
+* *Stroke Caps* determines the shape of the start and end points of a
+	open paths.
+* *Miter Limit* determines the shape of the joint points.
+
+Gradient tools are self-explanatory, except that you can add additional
+gradient stops right below the gradient ramp.
+
+
