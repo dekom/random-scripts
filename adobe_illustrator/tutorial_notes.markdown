@@ -85,5 +85,6 @@ Define a path and then apply the brush effects.
 Editing path can be accessed at *Window > Pathfinder*.
 
 **Cheat sheet**:
+
 ![Alt Pathfinder Cheat Sheet](https://github.com/dekom/scripts/raw/master/adobe_illustrator/images/compound-cheat-sheet.gif "Compound pathfinder cheat sheet - Source: Vector Diary")
 
