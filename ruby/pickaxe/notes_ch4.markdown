@@ -63,6 +63,34 @@ local, and by adding a semicolon prior to a local variable within the
 'pipes', e.g. `[1, 2, 3, 4].each do |value; square|`, then the variable
 becomes local to the block, in this case `square` is block local.
 
+Blocks can be converted to the class `Proc` by placing a
+`&variable_name` as one of the parameters. This is the implementation
+behind the `lambda` (which takes in a block) and `->` (ruby 1.9
+synonymous operator for `lambda`). 
+
+Blocks can also be used for *closures*, which is when 'variables in the
+surrounding scope that are referenced in a block remain accessible for
+the life of that block and the life of any *Proc* object created from
+that block'.
+
+This is best explained in an example
+
+	def n_times(thing)
+		lambda {|n| thing * n}
+	end
+	p1 = n_times(23)
+	p1.call(3) #=> 69
+	p1.call(4) #=> 92
+	p2 = n_times("Hello")
+	p2.call(3) #=> "Hello Hello Hello "
+
+In the previous examples, **23** and **"Hello"** are in the closure and
+were able to be referenced even outside of the method definition for
+`n_times`.
+
+For all intents and purposes, blocks are as flexible as methods
+regarding how and what can be taken into.
+
 ### Implementing Iterators ###
 'A Ruby iterator is simply a method that can invoke a block of code.'
 
@@ -74,3 +102,14 @@ where the control is passed to the block of code and then back.
 Useful, default iterators (look into Ruby API for details):
 `.each`, `.each_with_index`, `.collect`, and the mind-numbing `.inject`,
 which is (apparently) similar to the foldl function of SMLNJ.
+
+Ruby 1.9 has an *Enumerator* object that can be crated by calling
+`to_enum` or `enum_for` on a collection.
+
+Look through the Ruby API on the Enumerator class.  Especially checkout
+`.enum_for(:method_name)`.
+
+### Enumerators Are Generators and Filters ###
+(Advanced material)
+
+**Going to read this at a later time**
