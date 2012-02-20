@@ -106,10 +106,36 @@ which is (apparently) similar to the foldl function of SMLNJ.
 Ruby 1.9 has an *Enumerator* object that can be crated by calling
 `to_enum` or `enum_for` on a collection.
 
+Most of the internal iterator methods will also return an Enumerator
+object if called without a block.
+
 Look through the Ruby API on the Enumerator class.  Especially checkout
 `.enum_for(:method_name)`.
+
+`.enum_for` is used to create a custom Enumerator, where a particular
+method is called from within.
 
 ### Enumerators Are Generators and Filters ###
 (Advanced material)
 
 **Going to read this at a later time**
+
+### Blocks for Transactions ###
+Blocks can be used to section the logical work, and transfer control
+from one state to the next.
+
+### Blocks can be Objects ###
+If the last parameter of a method begins with an ampersand (&), that
+parameters will store the `Proc` object, which is the object class for
+blocks.
+
+Ruby provides two built-in methods that convert blocks into Proc
+objects:
+
+`lambda {block}`
+
+`Proc.new {block}`
+
+Additionally, in Ruby 1.9, you can create Proc objects by:
+
+`proc = -> arg { puts "Proc with arg #{arg} }`
