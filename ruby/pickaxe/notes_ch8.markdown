@@ -54,4 +54,35 @@ Then conflicting methods are called with `AModule.method_name`.
 *instance* methods (methods that are defined by `def self.method_name`.
 
 ### Mixins ###
+"At a stroke, they (modules) pretty much eliminate the need for inheritance."
 
+*Mixins* are created when modules are included in classes.
+
+	module ModuleName
+		def module_method
+			...
+		end
+	end
+
+	class ClassName
+		include ModuleName
+		def class_method
+			...
+		end
+	end
+
+	an_class_instance = ClassName.new
+	an_class_instance.module_method
+
+By including a module in a class, that class has access to all of the
+module's instance methods (even though modules cannot have instances
+because they're not classes).
+
+*Note*: in order to use `include ModuleName`, one may need to first
+`load` or `require` the file that contains the module.
+
+## Inheritance, Mixins, and Design ##
+When to use what?
+
+* **Inheritance**: when it is a *is-a* relationship.
+* **Mixins**: when it is a *has a* or *use a* relationship.
