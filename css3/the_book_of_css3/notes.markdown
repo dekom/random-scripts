@@ -1,4 +1,4 @@
-<a name="ch1"># Chapter 1: Introducing CSS3 #</a>
+# <a name="ch1">Chapter 1: Introducing CSS3</a> #
 
 CSS3 is modular in design to enable faster specification of the popular and necessary features, while allowing challenging and esoteric features to be developed more slowly.
 
