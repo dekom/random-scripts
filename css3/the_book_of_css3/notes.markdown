@@ -54,7 +54,7 @@ Rules:
 		rules
 	}
 
-Features:
+### Features: Width & Height ###
 
 	[min- | max-] width: length :: the width of the viewpoint (e.g. browser window)
 	[min- | max-] height: length :: the height of the viewpoint
@@ -66,5 +66,18 @@ This avoids unnecessary element loading.
 
 	<link href='basic.css' rel='stylesheet' media='screen'>
 	<link href='desktop.css' rel='stylesheet' media='screen and (min-device-width: 480px)'>
+	<!--[if lt IE 9]>
+		<link href='desktop.css' rel='stylesheet' media='screen'>
+	<![endif]-->
+
+### Features: Orientation & Aspect Ratio ###
+
+	orientation: [landscape | portrait] :: the orientation of the viewing device
+
+	aspect-ratio: horizontal/vertical :: the aspect ratio of the screen
+	device-aspect-ratio: horizontal/vertical :: the aspect ratio of the device
+
+### Features: Aspect Ratio ###
+
 
 
