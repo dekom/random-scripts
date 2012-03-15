@@ -72,16 +72,16 @@ This avoids unnecessary element loading.
 
 ### <a name="mf_oap"> Features: Orientation, Aspect Ratio, Pixel Ratio </a>###
 
-**Orientation***
+Orientation:
 
 	orientation: [landscape | portrait] :: the orientation of the viewing device
 
-***Aspect Ratio***
+Aspect Ratio:
 
 	aspect-ratio: horizontal/vertical :: the aspect ratio of the screen
 	device-aspect-ratio: horizontal/vertical :: the aspect ratio of the device
 
-***Pixel Ratio***
+Pixel Ratio:
 
 	[-webkit-][max- | min-] device-pixel-ratio: pixel density :: the pixel density (how many screen pixels per CSS pixel) of the viewing device
 	[max- | min-][moz] device-pixel-ratio: pixel density
