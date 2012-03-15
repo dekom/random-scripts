@@ -100,4 +100,5 @@ This avoids unnecessary element loading.
 		rules
 	}
 
+# Chapter 3: Selectors #
 
