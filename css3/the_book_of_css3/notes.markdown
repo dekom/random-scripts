@@ -5,8 +5,8 @@ CSS3 is modular in design to enable faster specification of the popular and nece
 `box-sizing`: "can set from which part of the box model -- the content itself or the border -- the width of the elemtn is calculated."
 
 	E { box-sizing: [border-box | content-box*]; }
-	border-box: measurement of the box model without margin
-	content-box: measurement of the internal content
+	border-box :: measurement of the box model without margin
+	content-box :: measurement of the internal content
 
 ## Browser Prefixes ##
 
@@ -26,15 +26,15 @@ implementation brick your code.
 
 ## Syntax ##
 
-1. external stylsheet w/e link
+1. external stylsheet w/e **link**
 
 		<link href='file' rel='stylesheet' media='logic media and (expression'>
 
-2. external stylesheet w/ @import
+2. external stylesheet w/ **@import**
 
 		@import url('file') logic media and (expression);
 
-3. extended @media rule:
+3. extended **@media** rule
 
 		@media logic media and (expression) {
 			rules
@@ -47,4 +47,26 @@ Rules:
 	expression: [ Media Features parameters ]
 
 ## Media Features ##
+
+"Media Features are information about the device that's being used to display the web page: its dimensions, resolution, and so on."
+
+	@media logic media and [(feature) | (feature:value)] {
+		rules
+	}
+
+Features:
+
+	[min- | max-] width: length :: the width of the viewpoint (e.g. browser window)
+	[min- | max-] height: length :: the height of the viewpoint
+	[min- | max-] device-width: length :: the width of the physical screen
+	[min- | max-] device-height: length :: the height of the physical screen
+	
+*Note*: Developers should consider building a stylesheet (and html) for smaller display devices first, then use Media Features to expand to larger displays.
+This avoids unnecessary element loading.
+
+i.e.
+
+	<link href='basic.css' rel='stylesheet' media='screen'>
+	<link href='desktop.css' rel='stylesheet' media='screen and (min-device-width: 480px)'>
+
 
