@@ -70,14 +70,34 @@ This avoids unnecessary element loading.
 		<link href='desktop.css' rel='stylesheet' media='screen'>
 	<![endif]-->
 
-### Features: Orientation & Aspect Ratio ###
+### Features: Orientation, Aspect Ratio, Pixel Ratio ###
+
+**Orientation***
 
 	orientation: [landscape | portrait] :: the orientation of the viewing device
+
+***Aspect Ratio***
 
 	aspect-ratio: horizontal/vertical :: the aspect ratio of the screen
 	device-aspect-ratio: horizontal/vertical :: the aspect ratio of the device
 
-### Features: Aspect Ratio ###
+***Pixel Ratio***
 
+	[-webkit-][max- | min-] device-pixel-ratio: pixel density :: the pixel density (how many screen pixels per CSS pixel) of the viewing device
+	[max- | min-][moz] device-pixel-ratio: pixel density
+
+### Features: Mozilla-Specific Media Features ###
+
+[Features proprietary to Gecko](https://developer.mozilla.org/En/CSS/Media_queries#Mozilla-specific_media_features)
+
+	-moz-touch-enabled {
+		rules
+	}	
+
+## Multiple Media Features ##
+
+	@media logic media and (expression) and (expression), logic media and (expression) ... {
+		rules
+	}
 
 
