@@ -28,15 +28,15 @@ implementation brick your code.
 
 1. external stylsheet w/e link
 
-	<link href='file' rel='stylesheet' media='logic media and (expression'>
+		<link href='file' rel='stylesheet' media='logic media and (expression'>
 
 2. external stylesheet w/ @import
 
-	@import url('file') logic media and (expression);
+		@import url('file') logic media and (expression);
 
 3. extended @media rule:
 
-	@media logic media and (expression) {
-		rules
-	}
+		@media logic media and (expression) {
+			rules
+		}
 
