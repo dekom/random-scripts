@@ -64,8 +64,6 @@ Features:
 *Note*: Developers should consider building a stylesheet (and html) for smaller display devices first, then use Media Features to expand to larger displays.
 This avoids unnecessary element loading.
 
-i.e.
-
 	<link href='basic.css' rel='stylesheet' media='screen'>
 	<link href='desktop.css' rel='stylesheet' media='screen and (min-device-width: 480px)'>
 
