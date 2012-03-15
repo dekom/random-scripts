@@ -7,7 +7,7 @@ CSS3 is modular in design to enable faster specification of the popular and nece
 		border-box: width of the box model without margin
 		content-box: width of the internal content
 
-<style>
+<style type='text/css'>
 div.box-sizing {
 	border: 10px solid black;
 	box-sizing: border-box;
