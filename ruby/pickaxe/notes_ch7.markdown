@@ -37,10 +37,12 @@ guarantee in other language libraries.
 When passing a parameter into `Hash.new(0)`, the parameter becomes the
 object's default value for unavailable keys. For example:
 
-	hash = Hash.new(0)
-	puts hash['word'] #=> 0
-	hash['word'] += 1
-	puts has['word'] #=> 1
+```ruby
+hash = Hash.new(0)
+puts hash['word'] #=> 0
+hash['word'] += 1
+puts has['word'] #=> 1
+````
 
 Since hash remembers the order of insertion, in order to sort element by
 another parameter, we must call the Hash instance's `sort_by` element.
@@ -75,14 +77,16 @@ that block'.
 
 This is best explained in an example
 
-	def n_times(thing)
-		lambda {|n| thing * n}
-	end
-	p1 = n_times(23)
-	p1.call(3) #=> 69
-	p1.call(4) #=> 92
-	p2 = n_times("Hello")
-	p2.call(3) #=> "Hello Hello Hello "
+```ruby
+def n_times(thing)
+    lambda {|n| thing * n}
+end
+p1 = n_times(23)
+p1.call(3) #=> 69
+p1.call(4) #=> 92
+p2 = n_times("Hello")
+p2.call(3) #=> "Hello Hello Hello "
+```
 
 In the previous examples, **23** and **"Hello"** are in the closure and
 were able to be referenced even outside of the method definition for
@@ -132,10 +136,14 @@ blocks.
 Ruby provides two built-in methods that convert blocks into Proc
 objects:
 
-`lambda {block}`
+```ruby
+lambda {block}
 
-`Proc.new {block}`
+Proc.new {block}
+```
 
 Additionally, in Ruby 1.9, you can create Proc objects by:
 
-`proc = -> arg { puts "Proc with arg #{arg} }`
+```ruby
+proc = -> arg { puts "Proc with arg #{arg} }
+```
