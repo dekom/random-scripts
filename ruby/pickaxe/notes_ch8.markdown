@@ -11,21 +11,28 @@ The *child class* inherits all of the *parent's* public and protected
 instances methods.
 
 **Syntax**
-	class Child < Parent
-		...
-	end
+
+```ruby
+class Child < Parent
+    ...
+end
+```
 
 *Every* object in Ruby is the child (multiplied by many generations) of
 the `BasicObject`, which is a "blank canvas" object created in ruby 1.9.
 For most functional cases, the root of the 'family tree' is `Object`.
 
 **To call superclass methods**
-	class Class < Parent
-		def method_name()
-			super()
-		end
-		...
-	end
+
+```ruby
+class Class < Parent
+    def method_name()
+        super()
+    end
+    ...
+end
+```
+
 `super()` calls the parent class's method that matches the name of the
 child's method.
 
@@ -34,7 +41,7 @@ child's method.
 constants.
 
 Modules:
-* 'provide a namespace and prevent name clashes.
+* provide a namespace and prevent name clashes.
 * support he mixin facility
 
 A *mixin* is 'like a partial class definition' and a combination of
@@ -44,9 +51,12 @@ flexibility of multi-inheritance and simplicity of single-inheritance.
 Modules are used to handle method name conflicts.
 
 A module is defined by
-	module AModule
-		...
-	end
+
+```ruby
+module AModule
+    ...
+end
+```
 
 Then conflicting methods are called with `AModule.method_name`.
 
@@ -58,21 +68,23 @@ Then conflicting methods are called with `AModule.method_name`.
 
 *Mixins* are created when modules are included in classes.
 
-	module ModuleName
-		def module_method
-			...
-		end
-	end
+```ruby
+module ModuleName
+    def module_method
+         ...
+    end
+end
 
-	class ClassName
-		include ModuleName
-		def class_method
-			...
-		end
-	end
+class ClassName
+    include ModuleName
+    def class_method
+        ...
+    end
+end
 
-	an_class_instance = ClassName.new
-	an_class_instance.module_method
+an_class_instance = ClassName.new
+an_class_instance.module_method
+```
 
 By including a module in a class, that class has access to all of the
 module's instance methods (even though modules cannot have instances
