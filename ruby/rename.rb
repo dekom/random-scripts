@@ -70,10 +70,6 @@ class Optparse
         puts OptionParser::Version.join('.')
         exit
       end
-
-      opts.on_head('') do
-        puts opts
-      end
     end
 
     opts.parse!(args)
@@ -91,7 +87,7 @@ def rename(dir, options)
       new_file = File.join(dirname, "#{basename}#{options.o}")
 
       p "#{file} -> #{new_file}" if options.verbose
-      #File.rename(file, new_file)
+      File.rename(file, new_file)
     end
   end
 end
